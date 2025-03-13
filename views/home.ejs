@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker</title>
+</head>
+<body>
+    <form action="submit" method="post" id="fitness-form">
+
+        <label for="type">Workout Type:</label>
+        <select name="type" id="workout-type">
+             <option value="Weightlifting">Weightlifting</option>
+             <option value="Soccer">Soccer</option>
+             <option value="Other">Other</option>
+        </select>
+
+        <label for="duration">Duration (minutes):</label>
+        <input name="duration" type="number" id="duration">
+
+        <p>Intensity Level:</p>
+        <input type="radio" name="intensity" value="low"><label for="low">Low</label>
+        <input type="radio" name="intensity" value="medium"><label for="medium">Medium</label>
+        <input type="radio" name="intensity" value="high"><label for="high">High</label>
+
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date">
+
+        <label for="notes">Notes:</label>
+        <textarea name="notes" id="ntoes"></textarea>
+
+        <button type="submit">Log Workout</button>
+    </form>
+</body>
+</html>
