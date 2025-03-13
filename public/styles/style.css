@@ -1,0 +1,100 @@
+body {
+    background-color: rgb(201, 201, 201);
+    width: 90%;
+    margin: 2rem auto;
+}
+
+form * {
+    box-sizing: border-box;
+}
+
+form, .submit-div {
+    background-color: rgb(237, 237, 237);
+    width: 35%;
+    margin: auto;
+    border: 1px solid rgb(141, 141, 141);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-left: 25px;
+}
+
+input, select, textarea, .radio-div {
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.radio-div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.radio {
+    display: inline-block;
+    width: auto;
+    margin: 0;
+}
+
+.radio-label {
+    width: auto;
+    margin-right: 5%;
+}
+
+button {
+    display: block;
+    margin: auto;
+    width: 90%;
+    margin-top: 10px;
+    background-color: green;
+    height: 30px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+
+/* --------------- Submit --------------------- */
+hr {
+    border: none;
+    height: 3px;
+    background-color: green;
+}
+
+.workout-card-h1 {
+    text-align: left;
+    margin-left: 9%;
+
+}
+
+.submit-div p {
+    width: auto;
+    margin-left: 10%;
+}
+
+.submit-div a {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none;
+}
+
+#go-back, .sum-and-home-button{
+    width: auto;
+    margin: 0;
+    float: right;
+}
+
+
+/* --------------- Submit --------------------- */
+.submit-div {
+    margin-top: 10px;
+}

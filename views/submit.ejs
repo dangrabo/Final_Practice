@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>Fitness Tracker</title>
+</head>
+<body>
+    <div class="submit-div">
+        <h1 class="workout-card-h1">Workout Submitted</h1>
+        <hr>
+        <p>Type: <%= workout.type %></p>
+        <p>Duration: <%= workout.duration %></p>
+        <p>Intensity: <%= workout.intensity %></p>
+        <p>Date: <%= workout.date %></p>
+        <p>Notes: <%= workout.notes %></p>
+        
+    </div>
+    <a href="/"><button id="go-back">Go Back</button></a>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>Fitness Tracker</title>
+</head>
+<body>
+    <h1>Workout Summary</h1>
+    <% for (let workout of workouts) { %>
+        <div class="submit-div">
+            <h1 class="workout-card-h1"><%= workout.type %></h1>
+            <hr>
+            <p>Duration: <%= workout.duration %></p>
+            <p>Intensity: <%= workout.intensity %></p>
+            <p>Date: <%= workout.date %></p>
+            <p>Notes: <%= workout.notes %></p>
+        </div>
+    <% } %> 
+    <a href="/"><button id="summary-button" class="sum-and-home-button">Home</button></a>
+
+</body>
+</html>

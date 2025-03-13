@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+
     <title>Fitness Tracker</title>
 </head>
 <body>
     <form action="submit" method="post" id="fitness-form">
+        <h1>Personal Fitness Tracker</h1>
 
         <label for="type">Workout Type:</label>
         <select name="type" id="workout-type">
@@ -18,10 +21,12 @@
         <label for="duration">Duration (minutes):</label>
         <input name="duration" type="number" id="duration">
 
-        <p>Intensity Level:</p>
-        <input type="radio" name="intensity" value="low"><label for="low">Low</label>
-        <input type="radio" name="intensity" value="medium"><label for="medium">Medium</label>
-        <input type="radio" name="intensity" value="high"><label for="high">High</label>
+        <label for="">Intensity Level:</label>
+        <div class="radio-div">
+            <input type="radio" name="intensity" value="low" id="low" class="radio radio-input"><label for="low" class="radio radio-label">Low</label>
+            <input type="radio" name="intensity" value="medium" id="medium" class="radio radio-input"><label for="medium" class="radio radio-label">Medium</label>
+            <input type="radio" name="intensity" value="high" id="high" class="radio radio-input"><label for="high" class="radio radio-label">High</label>
+        </div>
 
         <label for="date">Date:</label>
         <input type="date" name="date" id="date">
@@ -31,5 +36,7 @@
 
         <button type="submit">Log Workout</button>
     </form>
+
+    <a href="summary"><button id="summary-button" class="sum-and-home-button">Summary</button></a>
 </body>
 </html>
